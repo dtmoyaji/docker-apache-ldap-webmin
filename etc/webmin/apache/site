@@ -1,0 +1,6 @@
+modules=core/2.452 mod_log_config/2.452 mod_alias/2.452 mod_auth_basic/2.452 mod_authn_file/2.452 mod_authz_host/2.452 mod_autoindex/2.452 mod_dir/2.452 mod_env/2.452 mod_mime/2.452 mod_negotiation/2.452 mod_setenvif/2.452 mod_status/2.452
+webmin=2.021
+path=/usr/sbin/apache2
+fullversion=2.4.52
+version=2.452
+size=758672

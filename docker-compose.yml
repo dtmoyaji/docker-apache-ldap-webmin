@@ -1,0 +1,21 @@
+version: "3"
+
+services:
+  webmin:
+    build:
+      context: .
+      dockerfile: ./Dockerfile
+      args:
+        - ROOT_PASSWORD=${ROOT_PASSWORD}
+    ports:
+      - ${WEBMIN_PORT}:10000
+      - ${APACHE_PORT_HTTPS}:443
+      - ${APACHE_PORT_HTTP}:80
+    volumes:
+      - ./ssl:/etc/ssl/private
+      - ./backport:/var/backport
+      - ./etc/webmin:/etc/webmin
+      - ./etc/apache2:/etc/apache2
+      - ./var/www:/var/www
+      - ./startup/startup.sh:/usr/local/lib/startup/startup.sh
+

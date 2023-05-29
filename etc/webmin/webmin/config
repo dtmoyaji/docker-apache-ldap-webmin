@@ -1,0 +1,13 @@
+osdn=1
+cron_mode=0
+update=0
+letsencrypt_dns_wait=10
+upshow=1
+updays=1
+upmissing=0
+letsencrypt_algo=rsa
+warn_days=7
+last_version_check=1685326165
+last_version_number=2.021
+last_version_full=2.021
+last_version_release=

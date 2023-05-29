@@ -1,0 +1,13 @@
+restart_cmd=systemctl restart spamassassin
+spamassassin=spamassassin
+local_cf=/etc/spamassassin/local.cf
+addto=0
+amavisdconf=/etc/amavis/conf.d/20-debian_defaults
+warn_procmail=1
+max_awl=200
+call_spam=1
+processes=spamd amavisd
+procmailrc=/etc/procmailrc
+mode=0
+procmail_cmd=*
+sa_learn=sa-learn

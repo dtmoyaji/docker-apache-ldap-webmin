@@ -1,0 +1,12 @@
+keygen_path=/usr/bin/ssh-keygen
+sshd_config=/etc/ssh/sshd_config
+sshd_path=/usr/sbin/sshd
+client_config=/etc/ssh/ssh_config
+stop_cmd=systemctl stop sshd
+sync_pass=0
+restart_cmd=systemctl reload sshd
+pid_file=/var/run/sshd.pid
+sync_create=0
+sync_auth=1
+sync_gnupg=0
+start_cmd=systemctl start sshd
