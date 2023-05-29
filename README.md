@@ -10,7 +10,7 @@ LDAPサーバーは別途用意してある前提で作っています。
 Webminは日本語に設定してあるので、必要に応じて切り替えてください。
 
 # インストール
-etc/apache2/sites-available/000-default.conf内のLDAP認証設定を変更したあと、docker compose buildしてください。
+000-default.conのLDAP認証設定を変更し、etc/sites-availableにコピーした後、docker compose buildしてください。
 
 .env内のパラメータを変更すると、それぞれポート番号を変更することができます。
 webminには UID/PASS は root/root を初期値としていますので、.env内のパスワードを変更してください。
