@@ -6,3 +6,6 @@ LDAPサーバーは別途用意してある前提で作っています。
 
 # インストール
 etc/apache2/sites-available/000-default.conf内のLDAP認証設定を変更したあと、docker compose buildしてください。
+
+.env内のパラメータを変更すると、それぞれポート番号を変更することができます。
+
