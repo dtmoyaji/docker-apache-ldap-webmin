@@ -27,14 +27,14 @@
 	# after it has been globally disabled with "a2disconf".
 	#Include conf-available/serve-cgi-bin.conf
 
-	# <>を編集する。
+	# after editing belows, overwrite onto 000-default.conf and restart apache.
 	<Directory "/home/support/logs/*/">
-	    AuthName "LDAP認証"
+        AuthName "LOGIN"
 	    AuthType Basic
 	    AuthBasicProvider ldap
 	    # AuthzLDAPAuthoritative  off
 	    AuthLDAPURL  ldap://<URL>:<PORT>/<BASE_DN>?uid?sub?(objectClass=inetOrgPerson)
-            AuthLDAPBindDN "<BIND_DN>"
+        AuthLDAPBindDN "<BIND_DN>"
 	    AuthLDAPBindPassword "<PASSWORD>"
 	</Directory>
 
