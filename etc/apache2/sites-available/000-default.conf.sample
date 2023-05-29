@@ -32,7 +32,7 @@
 	    AuthName "LDAP認証"
 	    AuthType Basic
 	    AuthBasicProvider ldap
-	    AuthzLDAPAuthoritative  off
+	    # AuthzLDAPAuthoritative  off
 	    AuthLDAPURL  ldap://<URL>:<PORT>/<BASE_DN>?uid?sub?(objectClass=inetOrgPerson)
             AuthLDAPBindDN "<BIND_DN>"
 	    AuthLDAPBindPassword "<PASSWORD>"
